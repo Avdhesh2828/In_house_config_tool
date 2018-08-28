@@ -22,7 +22,7 @@ status,op_buffer_pkgupdate=commands.getstatusoutput(package_update)
 ############################################################
 
 
-with open('uninstall.txt','r') as obj:
+with open('packages/uninstall.txt','r') as obj:
 	for pkg in obj:
 		pkg = pkg.rstrip('\n')
 		cmd = "dpkg -l | grep -i %s" % pkg
@@ -45,7 +45,7 @@ with open('uninstall.txt','r') as obj:
 ##  Install Debian Packages provided in install.txt file ##
 ##							 ##
 ###########################################################
-with open('install.txt','r') as obj:
+with open('packages/install.txt','r') as obj:
         for pkg in obj:
                 pkg = pkg.rstrip('\n')
                 cmd = "dpkg -l | grep -i %s" % pkg
