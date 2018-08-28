@@ -1,4 +1,4 @@
-permissio=644
+permission=644
 owner=root
 group=root
 file=/var/www/html/index.html
