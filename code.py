@@ -96,7 +96,7 @@ with open('metadata.txt','r') as obj:
 ##					    ######	
 ##################################################
 
-cmd11 = "sudo chmod %s %s" %( dict['permissions'], dict['file'])
+cmd11 = "sudo chmod %s %s" %( dict['permission'], dict['file'])
 cmd12 = "sudo chown %s %s" %( dict['owner'], dict['file'])
 cmd13 = "sudo chgrp %s %s" %( dict['group'], dict['file'])
 
